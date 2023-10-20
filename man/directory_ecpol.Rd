@@ -2,7 +2,8 @@
 % Please edit documentation in R/Directories.R
 \name{directory_ecpol}
 \alias{directory_ecpol}
-\title{directory_ecpol genera, una vez en el directorio principal del paper, la estructura de carpetas con la que trabajamos y con esta función no tenemos que crear las carpetas de forma manual}
+\title{directory_ecpol genera, una vez en el directorio principal del paper, la estructura de carpetas con la que trabajamos y con esta función no tenemos que crear las carpetas de forma manual
+Además tambien genera el .gitignore para ahorrarnos ese trabajo.}
 \usage{
 directory_ecpol()
 }
@@ -11,4 +12,5 @@ Las carpetas necesarias para nuestro trabajo
 }
 \description{
 directory_ecpol genera, una vez en el directorio principal del paper, la estructura de carpetas con la que trabajamos y con esta función no tenemos que crear las carpetas de forma manual
+Además tambien genera el .gitignore para ahorrarnos ese trabajo.
 }
