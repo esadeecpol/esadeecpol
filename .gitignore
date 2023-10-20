@@ -1,1 +1,4 @@
-.Rproj.user
+.Rproj
+*.csv
+*.dta
+*.rds
