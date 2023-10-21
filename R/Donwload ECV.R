@@ -11,6 +11,7 @@
 #' @return Ficheros csv de los años seleccionados en una carpeta llamada ECV
 #' @export
 download_ecv <- function(start = 16, end = 22) {
+    library(glue)
     for (y in start:end) {
 
         y <- sprintf("%02d", y)
@@ -40,9 +41,9 @@ download_ecv <- function(start = 16, end = 22) {
         files <- list.files(pattern = '\\.dta$')
         files        
         for (file in files){
-            df <- read_dta(file)
+            df <- haven::read_dta(file)
             name <- sub("\\.dta$", "", file)
-            fwrite(df, glue('{name}.csv'))
+            data.table::fwrite(df, glue('{name}.csv'))
             file.remove(file)
             rm(df)
         }

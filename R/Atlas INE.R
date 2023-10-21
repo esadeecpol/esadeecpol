@@ -13,7 +13,7 @@
 #' @export
 
 download_atlas <- function(filename){
-
+    library(glue)
     codes <- list(
         Renta = 30824,
         Procedencia = 30825,

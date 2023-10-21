@@ -9,7 +9,7 @@
 #' @return Ficheros csv trimestrales en la carpeta EPA
 #' @export
 download_epa <- function(start_q = 1, end_q = 4, start_y = 5, end_y = 23) {
-
+    library(glue)
     for (i in start_q:end_q){
         for (y in start_y:end_y){
 
@@ -29,9 +29,9 @@ download_epa <- function(start_q = 1, end_q = 4, start_y = 5, end_y = 23) {
 
             setwd('STATA')
             file <- list.files(pattern = '\\.dta$')
-            df <- read_dta(file)
+            df <- haven::read_dta(file)
             name <- sub("\\.dta$", "", file)
-            fwrite(df, glue('{name}.csv'))
+            data.table::fwrite(df, glue('{name}.csv'))
             rm(df)
             file.remove(file)
             setwd('../')
