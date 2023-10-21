@@ -18,3 +18,7 @@ Imports:
     tools,
     pxR,
     glue
+Depends:
+    tidyverse,
+    haven,
+    glue
