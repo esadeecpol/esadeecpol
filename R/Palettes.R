@@ -60,9 +60,7 @@ palette_three <- palette_ecpol("threecolors")
 #' @export
 palette_four <- palette_ecpol("fourcolors")
 
-#Gradient palettes
-#' @rdname esadeecpol-palettes
-#' @export
+
 gradient_palettes <- list(
 gradient_palette_red = c("#E05656", "#F47D7D" , "#FCA55F", "#FFCE7A" , "#efb43f", "#ddb24c", "#cdb057", "#bcad61", "#adaa69", "#9da66f", "#8fa275", "#809e7a", "#73997e", "#659582", "#589084", "#4b8a86", "#3e8588", "#328088", "#257a89", "#177488", "#0e6f86", "#0f6982", "#0f637e", "#0f5d7a"),
 gradient_palette = c("#efb43f", "#ddb24c", "#cdb057", "#bcad61", "#adaa69", "#9da66f", "#8fa275", "#809e7a", "#73997e", "#659582", "#589084", "#4b8a86", "#3e8588", "#328088", "#257a89", "#177488", "#0e6f86", "#0f6982", "#0f637e", "#0f5d7a", "#0f5776", "#0e5172", "#0e4c6d", "#0d4669", "#0c4065", "#0b3b61", "#0a365c", "#083058", "#072b54", "#05264f", "#04214b", "#021c47", "#001742", "#00113e", "#000a3a"),
