@@ -17,3 +17,8 @@ Ficheros csv de los años seleccionados en una carpeta llamada ECV
 \description{
 Funcion de descarga de los ficheros anuales de la Encuesta de Condiciones de Vida
 }
+\examples{
+download_ecv(start = 9, end = 22)
+download_ecv(start = 9, end = 9)
+
+}

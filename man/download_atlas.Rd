@@ -15,3 +15,10 @@ Fichero de csv con 4 posibilidades: Renta, Procedencia de la renta, Gini y Demog
 \description{
 Esta funcion nos genera un csv en formato long de 4 posibles fichero del Atlas de Renta del INE: Renta, Procedencia, Gini, Demografia.
 }
+\examples{
+download_atlas(filename = "Renta")
+download_atlas(filename = "Procedencia")
+download_atlas(filename = "Gini")
+download_atlas(filename = "Demografia")
+
+}

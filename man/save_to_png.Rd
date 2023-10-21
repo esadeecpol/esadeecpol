@@ -26,6 +26,9 @@ save_to_png(
 
 \item{dpi}{Densidad de pixeles por pulgada}
 }
+\value{
+png and svg plots
+}
 \description{
 Las funciones de este fichero sirven para hacer mas rapido la exportacion de las visualizaciones de Esade, ya que dejamos valores por defecot
 }

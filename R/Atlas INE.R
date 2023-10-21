@@ -3,16 +3,14 @@
 #' 
 #' @param filename, hay que seleccionar que fichero queremos descargar de los 4 posibles.
 #' 
-#' @example 
+#' @examples 
 #' download_atlas(filename = "Renta")
 #' download_atlas(filename = "Procedencia")
 #' download_atlas(filename = "Gini")
 #' download_atlas(filename = "Demografia")
 #' 
-#' 
 #' @return Fichero de csv con 4 posibilidades: Renta, Procedencia de la renta, Gini y Demografica
 #' @export
-
 
 download_atlas <- function(filename){
 

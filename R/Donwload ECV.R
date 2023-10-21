@@ -4,15 +4,12 @@
 #' @param start Años desde el 8 hasta el numero 22
 #' @param end Años desde el 8 hasta el numero 22
 #' 
-#' @examaple
+#' @examples
 #' download_ecv(start = 9, end = 22)
 #' download_ecv(start = 9, end = 9)
 #' 
 #' @return Ficheros csv de los años seleccionados en una carpeta llamada ECV
 #' @export
-
-
-
 download_ecv <- function(start = 16, end = 22) {
     for (y in start:end) {
 

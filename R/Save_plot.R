@@ -8,7 +8,7 @@
 #' @param unit Unidades de medida
 #' @param dpi Densidad de pixeles por pulgada
 #'
-#' @return
+#' @return png and svg plots
 #' @export
 
 save_to_png <- function(plot, filename = "", width = 18, height = 12, unit = "cm", dpi = 300) {

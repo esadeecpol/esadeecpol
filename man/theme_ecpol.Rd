@@ -10,5 +10,5 @@ theme_ecpol()
 Tema creado por Jorge para visualizar los resultados
 }
 \description{
-Tema de los graficos de EsadeEcPol,
+contiene todas las clases relevantes para la creacion de los graficos, además este fichero contiene tambien todas las paletas de colores que están predefinidas, tanto las discrerrtas como las continuas
 }
