@@ -12,9 +12,9 @@ El paquete actual contiene información detalla y ejemplos de las funciones en l
 
 La instalación del paquete esadeepcol se hará a través de github con el siguiente codigo proporcionado
 
-<code>
+<pre>
 devtools::install.packages("esadeecpol/esadeecpol")
-</code>
+</pre>
 
 ## Usos del paquete
 
