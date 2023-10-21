@@ -13,7 +13,7 @@
 #' @export
 
 download_atlas <- function(filename){
-    library(glue)
+
     codes <- list(
         Renta = 30824,
         Procedencia = 30825,
@@ -34,7 +34,7 @@ download_atlas <- function(filename){
 
     suppressWarnings({
         df <- pxR::read.px(destfile) |> as_tibble()
-        fwrite(df, glue('{filename}.csv'))
+         data.table::fwrite(df, glue('{filename}.csv'))
     })
     
     file.remove(destfile)

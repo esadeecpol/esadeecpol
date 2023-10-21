@@ -4,8 +4,6 @@
 #' @export
 
 fonts_ecpol <- function() {
-  library(dplyr)
-  library(stringr)
   library(systemfonts)
   
   mabry <- system_fonts() %>%

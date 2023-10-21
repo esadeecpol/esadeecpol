@@ -11,7 +11,7 @@
 #' @return Ficheros csv de los años seleccionados en una carpeta llamada ECV
 #' @export
 download_ecv <- function(start = 16, end = 22) {
-    library(glue)
+
     for (y in start:end) {
 
         y <- sprintf("%02d", y)
