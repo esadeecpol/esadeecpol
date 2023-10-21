@@ -35,6 +35,19 @@ theme_ecpol <- function(){
   )
 }
 
+
+#' Funciones de paleta para esadeecpol
+#'
+#' Este archivo documenta un conjunto de funciones de paleta para el paquete esadeecpol.
+#' 
+#' @name esadeecpol-palettes
+#' @aliases palette_ecpol print_palette print_gradient
+#' @description Descripción general de las funciones de paleta.
+#'
+#' @export palette_ecpol
+#' @export print_palette
+#' @export print_gradient
+#' 
 palettes_ecpol <- list(
   onecolors = c("#00A47D"),
   twocolors = c("#00A47D","#EFB43F"),
