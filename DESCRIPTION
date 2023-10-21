@@ -2,8 +2,10 @@ Package: esadeecpol
 Title: Esade Center for Economic Policy Functions
 Version: 1.0
 Authors@R: 
-    person("Jorge", "Galindo", , "jorge.galindo@esade.edu")
-    person("Javier", "Martinez", , "javier.martinez32@esade.edu")
+c(
+    person("Jorge", "Galindo", email = "jorge.galinso@esade.edu", role = c("aut", "cre")),
+    person("Javier", "Martinez", email = "javier.martinez32@esade.edu", role = c("aut", "cre"))
+)
 License: MIT
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
