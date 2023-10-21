@@ -30,10 +30,17 @@ download_epa <- function(start_q = 1, end_q = 4, start_y = 5, end_y = 23) {
             setwd('STATA')
             file <- list.files(pattern = '\\.dta$')
             df <- haven::read_dta(file)
+            colnames(df) <- tolower(colnames(df))
+
+            if ("edad5" %in% colnames(df)) {
+                colnames(df)[colnames(df) == "edad5"] <- "edad1"
+                }
+
             name <- sub("\\.dta$", "", file)
             data.table::fwrite(df, glue('{name}.csv'))
             rm(df)
             file.remove(file)
+            
             setwd('../')
             txt <- list.files(pattern = 'txt')
             file.remove(txt)
