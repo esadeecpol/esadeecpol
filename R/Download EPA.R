@@ -17,7 +17,12 @@ download_epa <- function(start_q = 1, end_q = 4, start_y = 5, end_y = 23) {
             url <- glue("https://www.ine.es/ftp/microdatos/epa/datos_{i}t{y}.zip")
             destfile <- glue('data{i}y{y}')
         
-            download.file(url, destfile)
+            download_status <- try(download.file(url, destfile), silent = TRUE)
+        
+            if (class(download_status) == "try-error") {
+                cat("Error 404: No se pudo descargar el archivo para", i, "t", y, "\n")
+                next
+            }
             unzip(destfile)
             file.remove(destfile)
 
@@ -40,7 +45,7 @@ download_epa <- function(start_q = 1, end_q = 4, start_y = 5, end_y = 23) {
             data.table::fwrite(df, glue('{name}.csv'))
             rm(df)
             file.remove(file)
-            
+
             setwd('../')
             txt <- list.files(pattern = 'txt')
             file.remove(txt)
