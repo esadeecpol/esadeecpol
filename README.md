@@ -13,8 +13,11 @@ El paquete actual contiene información detalla y ejemplos de las funciones en l
 La instalación del paquete esadeepcol se hará a través de github con el siguiente codigo proporcionado
 
 <pre>
-devtools::install.packages("esadeecpol/esadeecpol")
+devtools::install_github('esadeecpol/esadeecpol', force = TRUE)
 </pre>
+
+Una vez ejecutado ese comando se descargará el paquete de esadeecpol y varios paquetes que necesitan las funciones para poder ejecutarse, unicamente en el caso de que no estén instalados previamente. 
+Además, el paquete importa una serie de librerias para evitar que se importen manualmente: **tidyverse, haven, glue, readxl, ggtext**
 
 ## Usos del paquete
 
