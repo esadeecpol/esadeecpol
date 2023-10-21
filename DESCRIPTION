@@ -9,16 +9,12 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Imports:  
-    dplyr,
-    ggplot2,
-    stringr,
-    readxl,
-    haven,
     data.table,
     tools,
     pxR,
-    glue
 Depends:
     tidyverse,
     haven,
-    glue
+    glue,
+    readxl,
+    ggtext
