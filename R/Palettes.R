@@ -80,10 +80,8 @@ gradient_palette <- colorRampPalette(gradient_palettes$gradient_palette)
 gradient_palette_range <- colorRampPalette(gradient_palettes$gradient_palette_range)
 
 gradient_loop <- 3:20
-#' @rdname esadeecpol-palettes
-#' @export
-#' 
 for (i in gradient_loop) {
+
 #' @rdname esadeecpol-palettes
 #' @export
   assign(paste0("gradient_palette_", i), colorRampPalette(gradient_palettes$gradient_palette)(i))
