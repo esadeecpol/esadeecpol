@@ -10,8 +10,12 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 Imports:
     dplyr,
+    tibble,
+    tidyr,
+    purrr,
+    forcats,
+    stringr,
     haven,
-    data.table,
-    tools,
-    pxR,
-    glue
+    rlang,
+    openxlsx,
+    data.table

@@ -1,8 +1,6 @@
-
-#' @name esadeecpol-palettes
-#' @aliases palette_ecpol print_palette print_gradient
-#' @description Descripción general de las funciones de paleta.
-#' @export
+#' @name esadeecpol-palettes 
+#' @title Conjunto de Funciones 
+#' @description Estas funciones hacen cosas muy interesantes.
 #' 
 #' @rdname esadeecpol-palettes
 #' @export
@@ -84,6 +82,7 @@ gradient_palette_range <- colorRampPalette(gradient_palettes$gradient_palette_ra
 gradient_loop <- 3:20
 #' @rdname esadeecpol-palettes
 #' @export
+#' 
 for (i in gradient_loop) {
 #' @rdname esadeecpol-palettes
 #' @export
