@@ -14,10 +14,12 @@ La instalación del paquete esadeepcol se hará a través de github con el sigui
 
 <pre>
 devtools::install_github('esadeecpol/esadeecpol', force = TRUE)
+
 </pre>
 
 Una vez ejecutado ese comando se descargará el paquete de esadeecpol y varios paquetes que necesitan las funciones para poder ejecutarse, unicamente en el caso de que no estén instalados previamente. 
-Además, el paquete importa una serie de librerias para evitar que se importen manualmente: **tidyverse, haven, glue, readxl, ggtext**
+<pre>library(esadeecpol)</pre>
+Una vez importamos el paquete como una libreria más en R, este tambiém importa una serie de paquetes que utiliamos siempre en R. Asi no habría que importar manualmente: **tidyverse, haven, glue, readxl, ggtext**
 
 ## Usos del paquete
 
@@ -42,6 +44,7 @@ save_to_svg(plot, filename)
 print_colors()
 </pre>
 
+
 ### Automatización
 
 <pre>
@@ -51,6 +54,16 @@ download_epa(start_q, end_q, start_y, end_y)
 download_ecv(start, end)
 download_atlas(filename)
 </pre>
+
+La primera función <code> directory_epcol()</code> nos genera de forma automatica el sistema de carpetas que estamos utilizando actualmente para un proyecto simple. Unicamente hay que abrir R, establecernos en la carpeta del proyecto vacía y ejecutar el código.
+
+La función <code>fonts_ecpol()</code> nos importa la tipografía de esade a nuestro entorno global de R. Es una forma de evitar escribir el largo código de importación de fuentes que utilizamos actualmente.
+
+La tercera función es <code>download_epa(start_q, end_q, start_y, end_y)</code>, que nos genera una carpeta llamada EPA en el directorio principal donde se encuentran los microdatos de la EPA. Como veis esta función tiene 4 parametros que hay que completar para poder ejecutar dicha función. Estos corresponden con el trimestre inicial y final y el año inicial y final de los ficheros que queremos descargar.
+
+Siguiendo con las funciones de descarga está <code>download_ecv(start, end)</code> que nos descarga los ficheros de microdatos de la ECV. Igual que la anterior tiene parametros que hay que competar, en este caso el año inicial y final de las encuestas que queremos descargar.
+
+Por último tenemos <code>download_atlas(filename)</code> que nos descarga un fichero csv del Atlas de Renta del INE. El parametro que nos solicita esta función tiene 4 posibles valores: "Renta", "Procedencia", "Gini" o "Demografía" ya que son los cuatro ficheros mas descargados del Atlas de Renta.
 
 ## Referencia al paquete
 
