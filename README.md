@@ -14,7 +14,6 @@ La instalación del paquete esadeepcol se hará a través de github con el sigui
 
 <pre>
 devtools::install_github('esadeecpol/esadeecpol', force = TRUE)
-
 </pre>
 
 Una vez ejecutado ese comando se descargará el paquete de esadeecpol y varios paquetes que necesitan las funciones para poder ejecutarse, unicamente en el caso de que no estén instalados previamente. 
@@ -44,6 +43,15 @@ save_to_svg(plot, filename)
 print_colors()
 </pre>
 
+La función <code>theme_ecpol()</code> es el tema predeterminado para todos los gráficos de esadeecpol. Unicamente hay que añadirlo al final de cada gráfico generado con ggplot para añadir las caracteristicas propias de nuestras visualizaciones.
+
+Las "funciones" <code>palette_one, palette_two, palette_three y palette_four</code> son paletas de colores discretas que tienen de uno a cuatro colores discretos respectivamente y se utilizan para agregar diferentes colores a las visualizaciones generadas en ggplot2.
+
+Lo mismo con las funciones <code>gradient_palette(n), gradiente_palette_red(n) y  gradiente_palette_range(n)</code>. En este caso son paletas continuas que hacemos discretas a través del parametro <code>n</code> que tienen las funciones, el cual hay que cambiar por el numero entero de 3 a 20 que necesitemos para una visualización determinada.
+
+Una vez terminadas las visualizaciones contamos con dos funciones para guardar los gráficos <code> save_to_png(plot, filename) y save_to_svg(plot, filename)</code>. Estas funciones tienen varios parametros por defecto como <code>width = 18 y height = 12</code> que se pueden cambiar añadiendo dicho parametro al código. Para figuras estandar unicamente hay que completar plot con el grafico que generamos en R y el filename con la ruta y nombre que le damos al gráfico en nuestro Finder.
+
+Por último tenemos <code>print_colors()</code> que unicamente sirve para que nos devuelva una lista de hexadecimales con el nombre de ese color. Muchas veces jorge nos dice "Usa azul esade" y nadie sabe que Hexadecimal es ese. Ahora utilizando esta función lo podrás saber al momento.
 
 ### Automatización
 
