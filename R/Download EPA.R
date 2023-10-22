@@ -26,7 +26,7 @@ download_epa <- function(start_q = 1, end_q = 4, start_y = 5, end_y = 23) {
             unzip(destfile)
             file.remove(destfile)
 
-            folders <- c('R', 'SAS', 'SPSS')
+            folders <- c('R', 'SAS', 'SPSS', 'CSV')
             for (f in folders){
                 dir <- list.dirs(glue('{f}'))
                 unlink(dir, recursive = T)
