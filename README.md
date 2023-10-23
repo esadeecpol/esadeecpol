@@ -49,7 +49,7 @@ Las "funciones" <code>palette_one, palette_two, palette_three y palette_four</co
 
 Lo mismo con las funciones <code>gradient_palette(n), gradiente_palette_red(n) y  gradiente_palette_range(n)</code>. En este caso son paletas continuas que hacemos discretas a través del parametro <code>n</code> que tienen las funciones, el cual hay que cambiar por el numero entero de 3 a 20 que necesitemos para una visualización determinada.
 
-Una vez terminadas las visualizaciones contamos con dos funciones para guardar los gráficos <code> save_to_png(plot, filename) y save_to_svg(plot, filename)</code>. Estas funciones tienen varios parametros por defecto como <code>width = 18 y height = 12</code> que se pueden cambiar añadiendo dicho parametro al código. Para figuras estandar unicamente hay que completar plot con el grafico que generamos en R y el filename con la ruta y nombre que le damos al gráfico en nuestro Finder.
+Una vez terminadas las visualizaciones contamos con dos funciones para guardar los gráficos <code>save_to_png(plot, filename) y save_to_svg(plot, filename)</code>. Estas funciones tienen varios parametros por defecto como <code>width = 18 y height = 12</code> que se pueden cambiar añadiendo dicho parametro al código. Para figuras estandar unicamente hay que completar plot con el grafico que generamos en R y el filename con la ruta y nombre que le damos al gráfico en nuestro Finder.
 
 Por último tenemos <code>print_colors()</code> que unicamente sirve para que nos devuelva una lista de hexadecimales con el nombre de ese color. Muchas veces jorge nos dice "Usa azul esade" y nadie sabe que Hexadecimal es ese. Ahora utilizando esta función lo podrás saber al momento.
 
@@ -63,7 +63,7 @@ download_ecv(start, end)
 download_atlas(filename)
 </pre>
 
-La primera función <code> directory_epcol()</code> nos genera de forma automatica el sistema de carpetas que estamos utilizando actualmente para un proyecto simple. Unicamente hay que abrir R, establecernos en la carpeta del proyecto vacía y ejecutar el código.
+La primera función <code>directory_epcol()</code> nos genera de forma automatica el sistema de carpetas que estamos utilizando actualmente para un proyecto simple. Unicamente hay que abrir R, establecernos en la carpeta del proyecto vacía y ejecutar el código.
 
 La función <code>fonts_ecpol()</code> nos importa la tipografía de esade a nuestro entorno global de R. Es una forma de evitar escribir el largo código de importación de fuentes que utilizamos actualmente.
 

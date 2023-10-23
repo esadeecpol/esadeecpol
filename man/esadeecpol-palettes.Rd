@@ -13,7 +13,6 @@
 \alias{palette_greenred}
 \alias{palette_three}
 \alias{palette_four}
-\alias{gradient_palettes}
 \alias{gradient_palette_red}
 \alias{gradient_palette}
 \alias{gradient_palette_range}
@@ -39,8 +38,6 @@ An object of class \code{palette} of length 3.
 
 An object of class \code{palette} of length 4.
 
-An object of class \code{list} of length 3.
-
 An object of class \code{matrix} (inherits from \code{array}) with 20 rows and 20 columns.
 }
 \usage{
@@ -63,8 +60,6 @@ palette_greenred
 palette_three
 
 palette_four
-
-gradient_palettes
 
 gradient_palette_red(n)
 
