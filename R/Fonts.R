@@ -30,5 +30,6 @@ fonts_ecpol <- function() {
     pull(path)
 
   assign("mabry_light_italic", mabry_light_italic_path, envir = .GlobalEnv)
-  systemfonts::register_font(name = "Mabry Pro Light Italic", italic = mabry_light_italic_path)
+  systemfonts::register_font(name = "Mabry Pro Light Italic", plain = mabry_light_italic_path, italic = mabry_light_italic_path)
 }
+
