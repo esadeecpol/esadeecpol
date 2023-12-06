@@ -5,8 +5,6 @@
 
 fonts_ecpol <- function() {
   library(systemfonts)
-  library(dplyr)
-  library(stringr)
 
   mabry <- system_fonts() %>%
     filter(family == "Mabry Pro") %>%
