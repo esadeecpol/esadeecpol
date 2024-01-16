@@ -7,7 +7,7 @@
 #' 
 palettes_ecpol <- list(
   onecolors = c("#00A47D"),
-  twocolors = c("#00A47D","#EFB43F"),
+  twocolors = c("#225E9C","#EFB43F"),
   threecolors = c("#225E9C","#00A47D","#EFB43F"),
   redgreen = c("#00A47D","#E05656"),
   greenred = c("#E05656","#00A47D"),
