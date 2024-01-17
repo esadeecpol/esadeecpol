@@ -14,7 +14,7 @@ palettes_ecpol <- list(
   semaforo_inverted = c("#00A47D","#EFB43F","#E05656"),
   semaforo = c("#00A47D","#EFB43F","#E05656"),
   fourcolors = c("#E05656","#EFB43F","#00A47D","#225E9C")
-  )
+)
 
 #' @rdname esadeecpol-palettes
 #' @export
@@ -77,8 +77,12 @@ gradient_palette <- colorRampPalette(gradient_palettes$gradient_palette)
 #' @export
 gradient_palette_range <- colorRampPalette(gradient_palettes$gradient_palette_range)
 
+
 gradient_loop <- 3:20
-for (i in gradient_loop) {
+#' @rdname esadeecpol-palettes
+#' @export
+for (i in gradient_loop) {  
+
 
 #' @rdname esadeecpol-palettes
 #' @export
@@ -89,7 +93,6 @@ for (i in gradient_loop) {
 #' @rdname esadeecpol-palettes
 #' @export
   assign(paste0("gradient_palette_range_", i), colorRampPalette(gradient_palettes$gradient_palette_range)(i))
-
 }
 
 

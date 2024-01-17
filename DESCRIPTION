@@ -1,6 +1,7 @@
 Package: esadeecpol
 Title: Esade Center for Economic Policy Functions
 Version: 1.0
+Description: Esade Center for Economic Policy Functions
 Authors@R: c(
     person("Jorge", "Galindo", email = "jorge.galinso@esade.edu", role = "aut"),
     person("Javier", "Martinez", email = "javier.martinez32@esade.edu", role = c("aut", "cre")))
