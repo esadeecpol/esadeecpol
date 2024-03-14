@@ -17,6 +17,7 @@ theme_ecpol <- function(){
                                   family="Mabry Pro Light",
                                   color = "#000000"),
     plot.caption = element_markdown(size = 9,
+                                hjust = 0, 
                                 vjust = .5,
                                 family="Mabry Pro Light",
                                 color = "#777777"),
