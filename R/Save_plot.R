@@ -46,3 +46,18 @@ save_to_svg <- function(plot, filename = "", width = 18, height = 12, unit = "cm
     dpi = dpi
   )
 }
+
+
+
+
+save_to_pdf <- function(plot, filename = "", width = 18, height = 12, unit = "cm", dpi = 300) {
+  ggsave(
+    plot = plot,
+    filename = filename,
+    device = 'pdf',
+    width = width,
+    height = height,
+    unit = unit,
+    dpi = dpi
+  )
+}
