@@ -1,22 +1,21 @@
+#' @name Download_ecv
 #' @title Descarga de ECV
 #' @description Funcion de descarga de los ficheros anuales de la Encuesta de Condiciones de Vida
-#' 
 #' @param start Años desde el 8 hasta el numero 22
 #' @param end Años desde el 8 hasta el numero 22
-#' 
 #' @examples
 #' download_ecv(start = 9, end = 22)
 #' download_ecv(start = 9, end = 9)
-#' 
 #' @return Ficheros csv de los años seleccionados en una carpeta llamada ECV
 #' @export
+
 download_ecv <- function(start = 16, end = 22) {
 
     for (y in start:end) {
 
         y <- sprintf("%02d", y)
-        url <- glue("https://www.ine.es/ftp/microdatos/ecv/ecv_b2013/datos_20{y}.zip")
-        destfile <- glue('data_20{y}')
+        url <- glue::glue("https://www.ine.es/ftp/microdatos/ecv/ecv_b2013/datos_20{y}.zip")
+        destfile <- glue::glue('data_20{y}')
 
         download.file(url, destfile)
         unzip(destfile)
@@ -43,7 +42,7 @@ download_ecv <- function(start = 16, end = 22) {
         for (file in files){
             df <- haven::read_dta(file)
             name <- sub("\\.dta$", "", file)
-            data.table::fwrite(df, glue('{name}.csv'))
+            data.table::fwrite(df, glue::glue("{name}.csv"))
             file.remove(file)
             rm(df)
         }

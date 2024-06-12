@@ -3,19 +3,24 @@ Title: Esade Center for Economic Policy Functions
 Version: 1.0
 Description: Esade Center for Economic Policy Functions
 Authors@R: c(
-    person("Jorge", "Galindo", email = "jorge.galinso@esade.edu", role = "aut"),
+    person("Jorge", "Galindo", email = "jorge.galindo@esade.edu", role = "aut"),
     person("Javier", "Martinez", email = "javier.martinez32@esade.edu", role = c("aut", "cre")))
+Author: Jorge Galindo [aut], Javier Martinez [aut, cre]
+Maintainer: Javier Martinez <javier.martinez32@esade.edu>
 License: MIT
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
-Imports:  
+Imports: 
     data.table,
     tools,
-    pxR,
+    pxR
 Depends:
     tidyverse,
     haven,
     glue,
     readxl,
     ggtext
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

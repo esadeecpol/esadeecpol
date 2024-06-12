@@ -1,6 +1,6 @@
+#' @name themes
 #' @title Tema de los graficos de EsadeEcPol, 
 #' @description contiene todas las clases relevantes para la creacion de los graficos, además este fichero contiene tambien todas las paletas de colores que están predefinidas, tanto las discrerrtas como las continuas 
-#' 
 #' @return Tema creado por Jorge para visualizar los resultados
 #' @export
 theme_ecpol <- function(){

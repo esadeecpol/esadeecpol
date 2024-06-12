@@ -1,7 +1,5 @@
 #' directory_ecpol genera, una vez en el directorio principal del paper, la estructura de carpetas con la que trabajamos y con esta función no tenemos que crear las carpetas de forma manual
 #' Además tambien genera el .gitignore para ahorrarnos ese trabajo.
-#'
-#'
 #' @return Las carpetas necesarias para nuestro trabajo
 #' @export
 
@@ -23,5 +21,4 @@ directory_ecpol <- function() {
   
   cat("Directorio creado exitosamente.\n")
 }
-
 

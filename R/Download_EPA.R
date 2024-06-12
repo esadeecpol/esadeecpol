@@ -1,13 +1,13 @@
+#' @name Download_epa
 #' @title Descarga de los microdatos de la EPA y unificacion de ficheros
 #' @description La funcion descarga los ficheros de microdatos de la EPA desde el primer trimestre de 2005 hasta el ultimo trimestre existente
-#' 
 #' @param start_q Primer trimestre de descarga
 #' @param end_q Ultimo trimestre de descarga
 #' @param start_y Primer año de descarga
 #' @param end_y Ultimo año de descarga
-#' 
 #' @return Ficheros csv trimestrales en la carpeta EPA
 #' @export
+
 download_epa <- function(start_q = 1, end_q = 4, start_y = 5, end_y = 23) {
     library(glue)
     for (i in start_q:end_q){
@@ -42,7 +42,7 @@ download_epa <- function(start_q = 1, end_q = 4, start_y = 5, end_y = 23) {
                 }
 
             name <- sub("\\.dta$", "", file)
-            data.table::fwrite(df, glue('{name}.csv'))
+            data.table::fwrite(df, glue::glue("{name}.csv"))
             rm(df)
             file.remove(file)
 
