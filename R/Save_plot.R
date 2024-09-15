@@ -9,7 +9,6 @@
 #' @param dpi Densidad de pixeles por pulgada
 #' @return png and svg plots
 #' @export
-
 save_to_png <- function(plot, filename = "", width = 18, height = 12, unit = "cm", dpi = 300) {
   ggsave(
     plot = plot,

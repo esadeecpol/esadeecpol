@@ -2,7 +2,6 @@
 #' Además tambien genera el .gitignore para ahorrarnos ese trabajo.
 #' @return Las carpetas necesarias para nuestro trabajo
 #' @export
-
 directory_ecpol <- function() {
   # Directorio base
   base_dir <- getwd() # Obtenemos el directorio actual

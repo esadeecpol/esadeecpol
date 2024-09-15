@@ -5,7 +5,6 @@
 #' print_colors()
 #' @return Tabla con el nombre y el hexadecimal de los colores básicos de esade
 #' @export
-
 print_colors <- function() {
 
     name <- c('Azul', 'Azul Esade', 'Rojo', 'Verde', 'Amarillo', 'Magenta', 'fucsia', 'Morado', 'Naranja', 'gris oscuro', 'negro')    
@@ -29,8 +28,6 @@ print_colors <- function() {
 #' 
 #' @return vector con el nombre y el hexadecimal que representa
 #' @export
-#' 
-
 names <- c('azul', 'azul_esade', 'rojo', 'verde', 'amarillo', 'magenta', 'fucsia', 'morado',
 'naranja', 'gris_oscuro', 'negro')
 

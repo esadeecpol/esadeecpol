@@ -2,7 +2,6 @@
 #' Fonts_ecpol nos importa todas las fuentes de esade para que no tengamos que importarlas #' de forma manual cada vez que hagamos graficos en R
 #' @return Las fuentes de esade cargadas en el global environment de R
 #' @export
-
 fonts_ecpol <- function() {
   library(systemfonts)
 

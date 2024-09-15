@@ -9,7 +9,6 @@
 #' download_atlas(filename = "Demografia")
 #' @return Fichero de csv con 4 posibilidades: Renta, Procedencia de la renta, Gini y Demografica
 #' @export
-
 download_atlas <- function(filename){
 
     codes <- list(
