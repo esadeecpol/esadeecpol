@@ -13,11 +13,25 @@ El paquete actual contiene información detalla y ejemplos de las funciones en l
 La instalación del paquete esadeepcol se hará a través de github con el siguiente codigo proporcionado
 
 <pre>
-devtools::install_github('esadeecpol/esadeecpol', force = TRUE)
+install.packages("devtools")
+devtools::install_github("esadeecpol/esadeecpol")
 </pre>
 
-Una vez ejecutado ese comando se descargará el paquete de esadeecpol y varios paquetes que necesitan las funciones para poder ejecutarse, unicamente en el caso de que no estén instalados previamente. 
-<pre>library(esadeecpol)</pre>
+Una vez instalado correctamente el paquete de esadeecpol, tenemos que instalar en nuestro ordenador las siguientes cuatro tipografías
+<pre>
+- Mabry Pro Light
+- Mabry Pro Light Italic
+- Mabry Pro Regular
+- Mabry Pro Medium
+</pre>
+
+Estas cuatro tipograficas se adjuntan en el fichero zip, solo hay que descomprimir la carpeta adjunta e instalarlas en tu ordenador de forma manual.
+
+Una vez ejecutado ese comando se descargará el paquete de esadeecpol y varios paquetes que necesitan las funciones para poder ejecutarse, unicamente en el caso de que no estén instalados previamente. Junto a la importacion del paquete, también importamos la funcion <code>fonts_ecpol</code> que hará que se importen las tipografias de esade en nuestro global environment de R.
+<pre>
+library(esadeecpol)
+fonts_ecpol()
+</pre>
 Una vez importamos el paquete como una libreria más en R, este tambiém importa una serie de paquetes que utiliamos siempre en R. Asi no habría que importar manualmente: **tidyverse, haven, glue, readxl, ggtext**
 
 ## Usos del paquete
